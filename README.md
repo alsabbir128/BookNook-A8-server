@@ -47,7 +47,7 @@ PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 DB_NAME=booknook
 JWT_SECRET=your_jwt_secret
-CLIENT_URL=https://alsabbir.lovable.app
+CLIENT_URL=https://booklog-ai.vercel.app/
 ```
 
 Keep secrets in the hosting provider's environment settings. Never commit `.env` files.
@@ -64,18 +64,6 @@ Keep secrets in the hosting provider's environment settings. Never commit `.env`
     "availableCopies": 1
   }
 }
-```
-
-## Recommended server structure
-
-```text
-src/
-├── config/        # MongoDB connection and environment configuration
-├── middleware/    # JWT authentication and error handling
-├── models/        # Book and borrow schemas
-├── routes/        # /books and /borrows routes
-├── controllers/   # Request handlers and validation
-└── server.js      # Express application entry point
 ```
 
 ## Deployment checklist
