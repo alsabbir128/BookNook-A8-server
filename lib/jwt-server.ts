@@ -4,6 +4,7 @@ import { auth } from '@/lib/auth'
 
 export const JWT_ACCESS_COOKIE_NAME = 'booknook_access_token'
 
+
 type JwtClaims = {
   sub?: unknown
   exp?: unknown
