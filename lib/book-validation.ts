@@ -9,6 +9,8 @@ export type BookInput = {
   totalCopies: number
 }
 
+
+
 type ValidationResult = { ok: true; value: BookInput } | { ok: false; error: string }
 
 function isHttpsUrl(value: string) {
